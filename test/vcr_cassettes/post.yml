@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://sandboxapi.rapyd.net/v1/customers
+    body:
+      encoding: UTF-8
+      string: '{"addresses":[],"business_vat_id":"123456789","coupon":"","description":"","email":"johndoe9993@rapyd.net","ewallet":"","invoice_prefix":"JD-","metadata":{"merchant_defined":true},"name":"John
+        Doe","payment_method":null,"phone_number":"+14155559993"}'
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux-gnu x86_64) ruby/2.6.2p47
+      Content-Type:
+      - application/json
+      Salt:
+      - dogsvvqb
+      Timestamp:
+      - '1591277846'
+      Access-Key:
+      - 54DB551A3EE85C7C86C1
+      Signature:
+      - OWI3ZDE0MmIwNzgyMjVhMWU2ZjIzYmFlZDQ2ZTVlYmMwZGE5ZmM1YjM0OWFkNzcxYzI5NGMzYTA4ZTkyZmI2Mg==
+      Content-Length:
+      - '250'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - sandboxapi.rapyd.net
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 04 Jun 2020 13:37:26 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '532'
+      Connection:
+      - keep-alive
+      Vary:
+      - X-HTTP-Method-Override, Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=8640000; includeSubDomains
+      Etag:
+      - W/"214-AbejVToSr8RjqdmjPDJOaA"
+    body:
+      encoding: UTF-8
+      string: '{"status":{"error_code":"","status":"SUCCESS","message":"","response_code":"","operation_id":"8083bc8a-0db9-44c5-896c-10c39bc657ec"},"data":{"id":"cus_6c6c3dad4068cc277f7d5d35d079f1b8","delinquent":false,"discount":null,"name":"John
+        Doe","default_payment_method":"","description":"","email":"johndoe9993@rapyd.net","phone_number":"+14155559993","invoice_prefix":"JD-","addresses":[],"payment_methods":null,"subscriptions":null,"created_at":1591277846,"metadata":{"merchant_defined":true},"business_vat_id":"123456789","ewallet":""}}'
+  recorded_at: Thu, 04 Jun 2020 13:37:27 GMT
+recorded_with: VCR 6.0.0

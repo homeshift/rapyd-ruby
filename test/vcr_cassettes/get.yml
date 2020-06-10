@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://sandboxapi.rapyd.net/v1/payments
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux-gnu x86_64) ruby/2.6.2p47
+      Content-Type:
+      - application/json
+      Salt:
+      - dcuqyvpu
+      Timestamp:
+      - '1591270879'
+      Access-Key:
+      - 54DB551A3EE85C7C86C1
+      Signature:
+      - ODM0OTRiZmYxYWI1MWY2YTZjNTUxY2RlYWQ3ZmQ4MjRiM2FiNmE1ZWMwZjhiZWEzZDUxZjI3NDQwMzU3YmYyNA==
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - sandboxapi.rapyd.net
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 04 Jun 2020 11:41:25 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '143'
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=8640000; includeSubDomains
+      Etag:
+      - W/"8f-McZlsk0EG2aIu0nmcoFoEg"
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: '{"status":{"error_code":"","status":"SUCCESS","message":"","response_code":"","operation_id":"0302e653-b6bc-463a-ad66-d2844476786b"},"data":[]}'
+  recorded_at: Thu, 04 Jun 2020 11:41:25 GMT
+recorded_with: VCR 6.0.0
